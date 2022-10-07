@@ -19,9 +19,6 @@ package org.springframework.samples.petclinic;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.LogManager;
-
 /**
  * PetClinic Spring Boot Application.
  *
@@ -31,15 +28,10 @@ import org.apache.log4j.LogManager;
 @SpringBootApplication
 public class PetClinicApplication {
 
-	private static final org.apache.log4j.Logger logger = LogManager.getLogger(PetClinicApplication.class); 
 
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
 		System.out.println(System.getenv("CLASSPATH"));
-
-		BasicConfigurator.configure();
-		logger.info("we are in logger info mode");
-		logger.info(System.getenv("CLASSPATH"));
 
 		SpringApplication.run(PetClinicApplication.class, args);
 	}
