@@ -32,6 +32,8 @@ import org.apache.log4j.Logger;
 @SpringBootApplication
 public class PetClinicApplication {
 
+	private static final Logger logger = LogManager.getLogger(PetClinicApplication.class); 
+
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
 		System.out.println(System.getenv("CLASSPATH"));
