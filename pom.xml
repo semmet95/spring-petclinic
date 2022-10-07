@@ -61,6 +61,12 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>  
+      <groupId>log4j</groupId>  
+      <artifactId>log4j</artifactId>  
+      <version>1.2.16</version>  
+    </dependency> 
+
     <!-- Databases - Uses H2 by default -->
     <dependency>
       <groupId>com.h2database</groupId>
