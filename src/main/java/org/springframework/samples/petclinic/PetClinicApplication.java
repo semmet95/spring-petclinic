@@ -28,12 +28,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class PetClinicApplication {
 
-
-	public static void main(String[] args) {
-		System.out.println("Hello World!");
+    public static void main(String[] args) {
 		System.out.println(System.getenv("CLASSPATH"));
-
-		SpringApplication.run(PetClinicApplication.class, args);
-	}
+        SpringApplication.run(PetClinicApplication.class, args);
+    }
 
 }
